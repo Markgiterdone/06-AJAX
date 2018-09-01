@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Characters</title>
+
+    <!-- Reset CSS -->
+    <!-- I did not include this standard file -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css" /> -->
+ 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Link to CSS   NOTE: Used internal css instead ... line commented out --> 
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <!-- Here is where the only internal css is used -->
+    <style type="text/css">
+        button,
+        div,
+        form,
+        input {
+          margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- USING AN ENTIRE CONTAINER FOR THE MAIN CONTENT -->
+<div class="container">
+    <br>
+    <div class="jumbotron">
+        <h2>Gif-Tastic Movie Characters</h2><br> 
+
+
+  <!--FIRST ROW OF ONE COLUMN -->
+  <!-- Rendered Buttons will get added here in this row -->
+    <div class="row1">
+        <div class="col-sm-12 border border-primary" style="background-color: rgb(255, 255, 255);" id="display-buttons">Temp label for show buttons</div>
+    </div>
+    <br>   
+
+    <!--SECOND ROW two COLUMNS -->
+    <!-- this is where the input form will be -->
+    <div class="row2">
+        <div class="col-sm-5 border border-secondary" style="background-color: rgb(255, 255, 255);">
+                <form id="form">
+                    <label for="user-input">Enter a Movie Character name:</label><br>
+                    <input type="text" id="user-input">
+                    <input id="submitPress" type="submit" value="Submit" class="btn btn-default">
+                </form>
+            </div>
+            <!-- Ended up not using the second column here inside this row -->
+        <!-- <div class="col-sm-9 border border-secondary" style="background-color: rgb(255, 255, 255);">
+            label
+        </div> -->
+    </div>
+
+    <!--THIRD ROW OF ONE COLUMN -->
+    <!-- This is where the gifs will be displayed -->
+    <div class="row3">
+        <div class="col-sm-12 border border-primary" style="background-color: rgb(255, 255, 255);" id="display-images">Images will be shown here!</div>
+    </div>
+
+</div>      
+<br>
+
+<!-- Link to JavaScript file -->
+<script src="ActorsV3.js"></script>
+
+</body>
+
+</html>
